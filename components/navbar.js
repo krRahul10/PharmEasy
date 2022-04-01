@@ -1,0 +1,30 @@
+function navbar(){
+    return`
+    <div id="logo_image">
+    <div id="image">
+<img onclick="window.location.href='index.html'" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDc1-CaH1Zd3hB2QdcYkgjw2oCJd-caxIHHQ&usqp=CAU" id="pharmaeasy_logo" alt="">
+  </div>
+</div>
+<div id="searchbar">
+    <div id="search_div">
+        <input type="text" id="search" placeholder="    Search   medicines/Healthcare   products   @18%   Off">
+        <img class="search_icon" src="https://img.icons8.com/external-others-anggara-putra/2x/external-social-social-media-basic-others-anggara-putra-20.png" alt="">
+   </div>
+</div>
+<div id="login_signup">
+    <div id="login_div">
+        <div class="login">
+            <img id="login_image" src="data:image/png;base64,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 alt="">
+            <p onclick="window.location.href='login.html'">Login</p>
+            <p onclick="window.location.href='signup.html'">Signup</p>
+        </div>
+    </div>
+    <div id="cart_div">
+        <img src="data:image/png;base64,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" alt="">
+        <p onclick="window.location.href='cart.html'">Cart</p>
+    </div>
+</div>
+    `
+}
+
+export default navbar

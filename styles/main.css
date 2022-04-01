@@ -1,0 +1,488 @@
+
+/*     Navbar      */
+
+
+#navbar{
+    height: 100px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+     background-color: rgb(0,144,108); 
+}
+#logo_image{
+    height: 100%;
+    flex: 2;
+    /* border: 1px solid red; */
+}
+#searchbar{
+    height: 100%;
+    flex: 6;
+    /* border: 1px solid rgb(0, 255, 115); */
+}
+#login_signup{
+    height: 100%;
+    flex: 2;
+    /* border: 1px solid blue; */
+}
+#image{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid yellow; */
+}
+#pharmaeasy_logo{
+height: 100%;
+width: 100%;
+}
+#search_div{
+    height: 60px;
+    width: 90%;
+    /* border: 1px solid black; */
+    margin:20px 0px 0px 30px;
+    display: flex;
+}
+#search{
+    height: 80%;
+    width: 90%;
+}
+#login_div{
+    height: 100%;
+    width: 60%;
+    /* border: 1px solid black; */
+}
+#cart_div{
+    height: 100%;
+    width: 40%;
+    /* border: 1px solid brown; */
+    display: flex;
+}
+#login_signup{
+    display: flex;
+}
+.search_icon{
+    height: 50%;
+    width: 10%;
+    margin: 15px 0px 0px 0px;
+
+}
+.login{
+    display: flex;
+    padding: 0px 0px 0px 0px;
+}
+.login p{
+    margin: 70px 0px 0px 10px;
+    color: white;
+    font-size: 20px;
+}
+#login_image{
+    margin: 65px 0px 0px 0px;
+    height: 30px;
+    width: 30px;
+}
+#cart_div img{
+    height: 30px;
+    width: 30px;
+    margin: 60px 0px 0px 10px;
+}
+#cart_div p{
+    margin: 70px 0px 0px 10px;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* slideshow */
+
+#slideShow{
+    height: 350px;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin: 20px 0px 0px 0px;
+}
+
+#slideShow_img{
+    height: 100%;
+    width: 100%;
+}
+
+/*  orderNow  */
+
+#orderNow{
+    height: 200px;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin: 10px 0px 0px 0px;
+    display: flex;
+}
+.div1{
+    /* border: 1px solid brown; */
+    height: 100%;
+    width: 48%;
+    margin: 0px 0px 0px 15px;
+}
+.div1 img{
+height: 70%;
+width: 100%;
+}
+
+#orderNow button{
+    height: 40px;
+    width: 110px;
+    margin: 10px 0px 0px 40px;
+    background-color: darkorange;
+    /* border: 1px solid white; */
+    color: white;
+    /* border-radius: 10px; */
+
+}
+
+/*  offer   */
+
+#offerForYou{
+    height: 100px;
+    width: 100%;
+    /* border: 1px solid blue; */
+    margin: 50px 0px 0px 0px ;
+    display: flex;
+}
+#offerForYou >div{
+height: 100%;
+width: 23%;
+/* border: 2px solid rgb(97, 96, 96); */
+margin: 0px 0px 0px 30px;
+/* border-radius: 15px; */
+display: flex;
+padding: 3% 0px 0px 20px;
+}
+#offerForYou img{
+    height: 45%;
+    width: 30%;
+    margin: 20px 20px 0px 0px;
+}
+#offerForYou p{
+    font-size: 18px;
+    color: rgb(104, 103, 103);
+}
+
+/*lab_test  */
+
+#lab_test{
+    height: 400px;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin: 100px 0px 0px 0px;
+    display: flex;
+    background-color: rgb(212,226,250);
+}
+.lab1{
+    height: 100%;
+    width: 20%;
+    /* border: 1px solid blueviolet; */
+    padding: 0px 0px 0px 10px;
+
+}
+.lab2{
+    height: 100%;
+    width: 80%;
+    /* border: 1px solid red; */
+    display: flex;
+    
+}
+.lab1 p{
+    margin: 30px 0px 0px 10px;
+    font-size: 20px;
+}
+.lab2 div{
+    height: 70%;
+    width: 23%;
+    /* border: 1px solid black; */
+    margin: 80px 0px 0px 15px;
+    /* border-radius: 20px; */
+}
+#bookNow_btn{
+height: 20%;
+width: 90%;
+/* border: 1px solid brown; */
+}
+.lab2 p{
+    font-size: 20px;
+    margin: 5px 0px 0px 10px;
+}
+.lab2 button{
+    background-color:white;
+    color: teal;
+    height: 50px;
+    width: 120px;
+    margin: 10px 0px 0px 48%;
+    /* border-radius: 10px; */
+    /* border: 1px solid white; */
+}
+.lab2 button:hover{
+    cursor: pointer;
+    background-color: teal;
+    color: white;
+}
+.lab2 div:hover{
+     border: 3px solid gray; 
+    
+}
+
+/*   featured Brands  */
+#featured_div{
+    height: 200px;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin: 50px 0px 0px 0px;
+    display: flex;
+
+}
+.featured_inside_div{
+    height: 80%;
+    width: 10%;
+    /* border: 1px solid rgb(100, 100, 100); */
+    margin: 20px 0px 0px 15px ;
+    /* border-radius: 5px; */
+}
+.featured_inside_div img{
+    height: 100%;
+    width: 100%;
+}
+
+/*  TopDeals */
+
+#topDeals{
+    height: 400px;
+    width: 100%;
+    /* border: 1px solid blue; */
+    margin: 20px 0px 0px 0px;
+    background-color:rgb(255,242,242);
+}
+.topDeals_inside_div{
+height: 30%;
+width: 100%;
+/* border: 1px solid pink; */
+display: flex;
+}
+.topdeals_imgae{
+    height: 100%;
+    width: 60%;
+    /* border: 1px solid blueviolet; */
+    display: flex;
+    padding: 0px 0px 0px 40px;
+}
+.viewAll_items{
+    height: 100%;
+    width: 40%;
+    /* border: 1px solid blueviolet; */
+    display: flex;
+}
+
+.topdeals_imgae img{
+    height: 90%;
+    width: 20%;
+    margin: 10px 0px 0px 0px ;
+}
+.topdeals_imgae h2{
+margin: 60px 0px 0px 20px ;
+color: salmon;
+}
+.topdeals_imgae h1{
+    margin: 60px 0px 0px 20px ;
+    color: rgb(56, 56, 56);
+}
+
+.viewAll_items h2{
+    margin: 13% 0px 0px 70%;
+    color: teal;
+}
+.viewAll_items p{
+    margin: 13% 0px 0px 30px;
+    font-size: 30px;
+}
+
+#saleItems{
+    height: 65%;
+    width: 100%;
+    /* border: 4px solid black; */
+    display: flex;
+    overflow: scroll;
+}
+
+
+/* health care products */
+
+
+#healthCare{
+    height:560px ;
+    width: 100%;
+    /* border: 1px solid blue; */
+    margin: 30px 0px 0px 0px;
+}
+
+.tagLine{
+    height: 11%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;   
+}
+.images_div{
+    height: 89%;
+    width: 33%;
+    /* border: 1px solid black; */
+    margin: 0px 0px 0px 10px ;
+    
+}
+.images_div img{
+    height: 60%;
+    width: 98%;
+    /* border-radius: 10px; */
+    margin: 10px 0px 0px 0px;
+}
+.images_div p{
+  font-size: 20px;
+  margin: 10px 0px 0px 10px;
+}
+.images_div a{
+    margin: 30px 0px 0px 10px;
+ }
+#healthCare_items{
+    height: 89%;
+    width: 100%;
+    display: flex;
+    /* border: 1px solid blue; */
+}  
+
+/*  millon users  */
+
+#millonUsers{
+    height: 300px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    margin: 60px 0px 0px 0px;
+}
+
+#millonUsers div{
+    height: 90%;
+    width: 25%;
+    /* border: 1px solid red; */
+    margin: 20px 0px  0px 10px;
+
+}
+
+#millonUsers div img{
+    height: 49%;
+    width: 90%;
+    margin: 20px 0px  0px 10px;
+
+}
+#millonUsers div h1{
+   font-size: 40px;
+   margin: 20px 0px  0px 50px;
+   color: rgb(79,88,94);
+}
+#millonUsers div p{
+    font-size: 20px;
+    margin: 20px 0px  0px 30px;  
+}
+
+/* customer reviews  */
+
+#customers_reviews{
+    height: 300px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    margin: 60px 0px 0px 0px;
+}
+.comment_box{
+    height: 90%;
+    width: 25%;
+    /* border: 1px solid red; */
+    margin: 20px 0px  0px 10px;
+}
+
+.person_name{
+    height: 20%;
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+}
+.person_name p{
+   margin: 20px 0px 0px 80px ;
+   font-size: 20px;
+}
+
+.person_comment{
+    height: 70%;
+    width: 100%;
+    /* border: 1px solid black; */
+    background-color: rgb(242,255,248);
+}
+.person_comment p{
+   font-size: 18px;
+   margin: 10px 0px 0px 10px;
+}
+
+/*  download app */
+
+#downloadApp_div{
+    height: 400px;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    background-color: rgb(242,245,245);
+}
+
+.download{
+    height: 100%;
+    width: 60%;
+    /* border: 1px solid blue; */
+    padding: 0px 0px 0px 20px;
+
+}
+
+.download_image{
+    height: 100%;
+    width: 40%;
+    /* border: 1px solid red; */
+}
+
+.freeApp_tag{
+    margin: 140px 0px 0px 0px;
+}
+.googlePlay{
+    margin: 20px 0px 0px 30px;
+    height: 100px;
+    width: 60%;
+    /* border: 1px solid blue; */
+    display: flex;
+
+}
+.googlePlay img{
+    height: 60%;
+    width: 40%;
+    margin: 0px 0px 0px 30px ;
+}
+.download_image img{
+    height: 90%;
+    width: 90%;
+}
+
+/*  append Data  */
+
+#item_image{
+    height: 30%;
+    width: 90%;
+
+}
+
+#items-div{
+    /* border: 1px solid black; */
+    height: 400px;
+    width: 500px;
+    padding: 20px 0px 0px 10px;
+    margin: 0px 0px 0px 40px ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

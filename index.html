@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div id="container">
+    <div id="navbar"></div>
+    <div id="slideShow">
+        <!--Show Slideshow here-->
+        <img src="" id="slideShow_img" alt="">
+    </div>
+
+    <div id="orderNow">
+        <div class="div1">
+            <img class="order_medicine_image" src="data:image/jpeg;base64,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" alt="">
+
+            <button style="background-color: lightseagreen;">Order Now</button>
+        </div>
+        <div class="div1">
+            <img src="https://th.bing.com/th/id/OIP.kaflDhXR25N9fpm3-SyvLwHaD3?w=301&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+            <button>Order Now</button>
+        </div>
+        <div class="div1">
+            <img src="https://th.bing.com/th/id/OIP.ULh8XabVC8udxur94Pji_QHaH5?w=153&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+            <button style="background-color: darkturquoise;">Book Now</button>
+        </div>
+    </div>
+
+    <div id="offerForYou">
+        <div class="">
+            <img src="https://cms-contents.pharmeasy.in/offer/f8bf7f78e45-25100.jpg?dim=60x0&dpr=1&q=100" alt="">
+            <p>Flat 25% off + up to <br> Rs. 1000 cashBack <br> code :GA7HZQD0G</p>
+        </div>
+        <div class="">
+            <img src="https://cms-contents.pharmeasy.in/offer/6901b462e6d-icicinew.jpg?dim=60x0&dpr=1&q=100" alt="">
+            <p>Flat 25% off + up to <br> Rs. 1000 cashBack <br> code :GA7HZQD0G</p>
+        </div>
+        <div class="">
+            <img src="https://cms-contents.pharmeasy.in/offer/4db0adda6b1-40.jpg?dim=60x0&dpr=1&q=100" alt="">
+            <p>Flat 25% off + up to <br> Rs. 1000 cashBack <br> code :GA7HZQD0G</p>
+        </div>
+        <div class="">
+            <img src="https://cms-contents.pharmeasy.in/offer/f8bf7f78e45-25100.jpg?dim=60x0&dpr=1&q=100" alt="">
+            <p>Flat 25% off + up to <br> Rs. 1000 cashBack <br> code :GA7HZQD0G</p>
+        </div>
+    </div>
+
+    <div id="lab_test">
+        <div class="lab1">
+            <h2 style="margin-top: 20px;">Frequently Booked Lab test</h2>
+            <p>100+ certifed labs</p>
+            <p>1000 Happy costomer</p>
+            <p>Free sample collection</p>
+            <p>Accurate Reports</p>
+        </div>
+        <div class="lab2">
+            <div>
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/909edb3f.svg" alt="">
+                    <p>Covid-19 RTPCR (coronavirus) <br>Available at 1 certified lab</p>
+                    <p>$700 Onword</p>
+                    <button>Book Now ></button>
+            </div>
+            <div>
+                <img src="https://assets.pharmeasy.in/web-assets/dist/909edb3f.svg" alt="">
+                <p>Fasting Blood Sugar (FBS) <br>Available at 1 certified lab</p>
+                <p>$700 Onword</p>
+                <button>Book Now ></button>
+            </div>
+            <div>
+                <img src="https://assets.pharmeasy.in/web-assets/dist/909edb3f.svg" alt="">
+                <p>HbAlc(Glycosylated Hemoglobin) <br>Available at 1 certified lab</p>
+                <p>$399 Onword</p>
+                <button>Book Now ></button>
+            </div>
+            <div>
+                <img src="https://assets.pharmeasy.in/web-assets/dist/909edb3f.svg" alt="">
+                <p>Post Prandial Blood(PPBS) <br>Available at 1 certified lab</p>
+                <p>$199 Onword</p>
+                <button>Book Now ></button>
+            </div>
+        </div> 
+    </div>
+
+    <div><h1>Featured Brands</h1></div>
+    <div id='featured_div'>
+     
+        <div class="featured_inside_div">
+            <img src="https://cms-contents.pharmeasy.in/carousel_item/0845572266f-Everherb.jpg?dim=146x0&dpr=1&q=100" alt="">
+
+        </div>
+        <div class="featured_inside_div">
+            <img src="https://cms-contents.pharmeasy.in/carousel_item/a135764fb94-Kapiva_web.jpg?dim=146x0&dpr=1&q=100" alt="">
+        </div>
+        <div class="featured_inside_div">
+            <img src="https://cms-contents.pharmeasy.in/carousel_item/73f9dfbac01-Teddy.jpg?dim=146x0&dpr=1&q=100" alt="">
+        </div>
+        <div class="featured_inside_div">
+            <img src="https://cms-contents.pharmeasy.in/carousel_item/326d31cf4d3-Nycil_web.jpg?dim=146x0&dpr=1&q=100" alt="">
+        </div>
+        <div class="featured_inside_div">
+            <img src="https://cms-contents.pharmeasy.in/carousel_item/f8493a13be2-web_Pigeon.jpg?dim=146x0&dpr=1&q=100" alt="">
+        </div>
+        <div class="featured_inside_div">
+            <img src="https://cms-contents.pharmeasy.in/carousel_item/ac01791d842-Featured-banner_Volini.png?dim=146x0&dpr=1&q=100" alt="">
+        </div>
+        <div class="featured_inside_div">
+            <img src="https://cms-contents.pharmeasy.in/carousel_item/487644e2f83-Nivea_web.jpg?dim=146x0&dpr=1&q=100" alt="">
+        </div>
+        <div class="featured_inside_div">
+            <img src="https://cms-contents.pharmeasy.in/carousel_item/fdcad76ed48-WEB_Bournvita.jpg?dim=146x0&dpr=1&q=100" alt="">
+        </div>
+        <div class="featured_inside_div">
+            <img src="https://cms-contents.pharmeasy.in/carousel_item/73f9dfbac01-Teddy.jpg?dim=146x0&dpr=1&q=100" alt="">
+        </div>
+    </div>
+
+    <div id="topDeals">
+        <div class="topDeals_inside_div">
+            <div class="topdeals_imgae">
+                <img src="https://assets.pharmeasy.in/web-assets/dist/cc9b301d.svg" alt="">
+                <h1>Deals of the Day</h1>
+                <h2>   |      10:20:09   Left</h2>
+            </div>
+            <div class="viewAll_items">
+                <h2 onclick="window.location.href='allItems.html'">View All </h2>
+                <p>></p>
+            </div>
+        </div>
+        <div id="saleItems">
+         
+
+        </div>
+    </div>
+<div id="healthCare">
+    <div class="tagLine">
+     <h2>Health Articles</h2>  
+    </div>
+    <div id="healthCare_items">
+ <div class="images_div">
+        <img src="https://blog-images.pharmeasy.in/2022/03/29164100/MALE-SKINCARE.jpg?dim=0x230&dpr=1&q=100" alt="">
+        <h2>15 Best under Eye care in india</h2>
+        <p>Table of content Best under Eye cream in<br>Indian Benefits of using an under <br>eye cream points to <br>consider before purchasing...</p>
+        <a href="">Read More</a>
+    </div>
+    <div class="images_div">
+        <img src="https://blog-images.pharmeasy.in/2022/03/22123325/Preg-Diet.jpg?dim=0x230&dpr=1&q=100" alt="">
+        <h2>what not to Eat  when you're Expecting</h2>
+        <p>Table of content Best under Eye cream in<br>Indian Benefits of using an under <br>eye cream points to <br>consider before purchasing...</p>
+        <a href="">Read More</a>
+    </div>
+    <div class="images_div">
+        <img src="https://blog-images.pharmeasy.in/2022/03/28145625/breastfeeding.jpg?dim=0x230&dpr=1&q=100" alt="">
+        <h2>Best Breastmilk Foods: How to make Breastmilk test..</h2>
+        <p>Table of content Best under Eye cream in<br>Indian Benefits of using an under <br>eye cream points to <br>consider before purchasing...</p>
+        <a href="">Read More</a>
+    </div>
+
+    </div>
+</div>
+
+<div id="millonUsers">
+    <div>
+<img src="https://assets.pharmeasy.in/web-assets/dist/4d2f7c48.svg" alt="">
+<h1>25 Million</h1>
+<p>Registered user as of june 2021</p>
+    </div>
+    <div>
+<img src="https://assets.pharmeasy.in/web-assets/dist/92c372bb.svg" alt="">
+<h1>8.8 Million</h1>
+<p>PharmEasy order as of FY21</p>
+    </div>
+    <div>
+<img src="https://assets.pharmeasy.in/web-assets/dist/773ae9c5.svg" alt="">
+<h1>30 Million</h1>
+<p>SKU's sold in QI FY21</p>
+    </div>
+    <div>
+<img src="https://assets.pharmeasy.in/web-assets/dist/f2d557d3.svg" alt="">
+<h1>10.7 k+</h1>
+<p>Pin code serviced for the month</p>
+    </div>     
+
+</div>
+
+<h1>What our customer have to say</h1>
+<div id="customers_reviews">
+    <div class="comment_box">
+        <div class="person_name">
+            <h4>Darpan Dhokla</h4>
+            <p>April 19, 2021</p>
+        </div>
+        <div class="person_comment">
+            <p>Best sevice and app amongst all available.I <br>have been using it for more than 3 years.and <br> even during the pandemic,they have kept their standards high and are delivering the order <br> within 24hours.keep up the good work</p>
+        </div>
+        </div>
+
+        <div class="comment_box">
+            <div class="person_name">
+                <h4>Lipi Chaudhuri</h4>
+                <p>March 19, 2021</p>
+            </div>
+            <div class="person_comment">
+               <p>Excellent experience.pharmeasy has not let it's <br> customer dowm during lockdown .thanks team <br> great job.The application is also very smooth. <br> and does its jo well with an attractive UI</p>
+            </div>
+            </div>
+
+            <div class="comment_box">
+                <div class="person_name">
+                    <h4>Tirthankar Das</h4>
+                    <p>May 19, 2021</p>
+                </div>
+                <div class="person_comment">
+                  <p>Very good app.would recommend it to everyone <br> requiring fast and efficient delivery of medicinal <br> products at the doorstep;</p>
+                </div>
+                </div>
+                <div class="comment_box">
+                    <div class="person_name">
+                        <h4>Rahul</h4>
+                        <p>February 19, 2021</p>
+                    </div>
+                    <div class="person_comment">
+                        <p>Best sevice and app amongst all available.I <br>have been using it for more than 3 years.and <br> even during the pandemic,they have kept their standards high and are delivering the order <br> within 24hours.keep up the good work</p>
+                    </div>
+                    </div>
+    </div>
+
+    <div id="downloadApp_div">
+
+        <div class="download">
+            <h1>Simplifying Healthcare ,Impacting Lives</h1>
+            <h1 class="freeApp_tag">Download the App for free</h1>
+            <div class="googlePlay">
+                <img src="https://assets.pharmeasy.in/web-assets/dist/4e4f1cab.png" alt="">
+                <img src="https://assets.pharmeasy.in/web-assets/dist/83095c03.png" alt="">
+            </div>
+        </div>
+        <div class="download_image">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/1d1ccea7.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+</div>
+</body>
+</html>
+<script type="module">
+import navbar from './components/navbar.js'
+//console.log('navbar',navbar())
+
+let navbar_div=document.getElementById('navbar')
+navbar_div.innerHTML=navbar()
+
+
+let image_arr=['https://cms-contents.pharmeasy.in/banner/aff1e7e2a72-PHEA20Dweb.jpg?dim=1440x0&dpr=1&q=100',
+'https://cms-contents.pharmeasy.in/banner/e0c9b9d5481-Dweb.jpg?dim=1440x0&dpr=1&q=100',
+'https://cms-contents.pharmeasy.in/banner/99b17b5c930-Dweb_Entry.jpg?dim=1440x0&dpr=1&q=100',
+'https://cms-contents.pharmeasy.in/banner/85955054ec0-Surgicare_Dweb_1.jpg?dim=1440x0&dpr=1&q=100',
+'https://cms-contents.pharmeasy.in/banner/d6903fb22ab-Dweb_NpnPE.jpg?dim=1440x0&dpr=1&q=100',
+'https://cms-contents.pharmeasy.in/banner/d09ec56dcd3-DWEB.jpg?dim=1440x0&dpr=1&q=100',
+]
+
+
+localStorage.setItem("images",JSON.stringify(image_arr))
+
+function startSlideShow(){
+    let slide_img=JSON.parse(localStorage.getItem("images"))
+//console.log(slide_img)
+    let slideShow_img=document.getElementById("slideShow_img")
+
+    let i=0
+    setInterval(function(){
+        if(i==image_arr.length){
+            i=0
+        }
+        //console.log(slide_img[i])
+        slideShow_img.src=slide_img[i]
+        i++
+    },2000)
+    
+}
+startSlideShow()
+
+// var parent_div= document.getElementById('saleItems')
+let data=JSON.parse(localStorage.getItem('medData'))
+console.log('getData',data)
+
+
+const appendData=(data)=>{
+    data.map(function(el){
+     console.log('el',el)
+         let div=document.createElement('div')
+         div.id='items-div'
+
+         let image=document.createElement('img')
+         image.src=el.image
+         image.id='item_image'
+
+         let title=document.createElement('p')
+         title.innerHTML=el.title
+
+         let mrp=document.createElement('p')
+         mrp.innerText=`MRP ${el.mrp}`
+         mrp.style.textDecoration='line-through';
+
+         let price=document.createElement('p')
+         price.innerHTML=`Price ${el.price}`
+
+         div.append(image,title,mrp,price)
+
+        document.getElementById('saleItems').append(div)
+    })
+}
+appendData(data)
+
+</script>

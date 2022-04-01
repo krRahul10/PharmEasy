@@ -1,0 +1,180 @@
+let medData=[
+    {
+      image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FC34354%2Fciphands-hand-sanitizer-bottle-of-100-ml-2-1641789437.jpg&w=256&q=75',
+      title:'Ciphands Hand Sanitizer Bottle Of 100 Ml',
+      mrp:'1300',
+      price:'1100', 
+    },
+    {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FZ01544%2Ffriends-premium-adult-medium-diaper-pants-25-48-in-high-absorbency-flexible-waist-band-1s-pack-2-1641789399.jpg&w=256&q=75',
+        title:'Friends Premium Adult Medium Diaper Pants 25-48 In, High Absorbency Flexible Waist Band 1 s Pack',
+        mrp:'50',
+        price:'45', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FA52432%2Fdr-morepen-lemolate-gold-ayurvedic-cough-syrup-100ml-1-1641790547.jpg&w=256&q=75',
+        title:'Dr. Morepen Lemolate Gold Ayurvedic Cough Syrup - 100ml',
+        mrp:'60',
+        price:'49', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2F000591%2Fabzorb-anti-fungal-dusting-powder-100gm-1-1648210457.jpg&w=256&q=75',
+        title:'Abzorb Anti Fungal Dusting Powder 100gm',
+        mrp:'910',
+        price:'289', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FE54755%2Feverherb-aloe-vera-juice-with-pulp-rejuvenates-skin-hair-1-litre-bottle-2-1643882394.jpg&w=256&q=75',
+        title:'Everherb Aloe Vera Juice With Pulp - Rejuvenates Skin & Hair - 1 Litre Bottle',
+        mrp:'399',
+        price:'289', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FI07006%2Fvicks-vaporub-110ml-relief-from-cold-cough-headache-and-body-pain-2-1643882373.jpg&w=256&q=75',
+        title:'Vicks Vaporub 110ml, Relief From Cold, Cough, Headache And Body Pain',
+        mrp:'78',
+        price:'26', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FT37432%2Fmothersparshayurvedic-baby-massage-oil-100ml-3-1642064799.jpg&w=256&q=75',
+        title:'Mother Sparsh Ayurvedic Baby Massage Oil-100ml',
+        mrp:'187',
+        price:'146', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FA55698%2Fvolini-all-round-360-action-spray-100gm-1-1641788348.jpg&w=256&q=75',
+        title:'Volini All Round 360 Action Spray 100gm',
+        mrp:'290',
+        price:'178', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FK36134%2Fotrivin-breathe-clean-daily-nasal-wash-100-ml-2-1641790753.jpg&w=256&q=75',
+        title:'Otrivin Breathe Clean Daily Nasal Wash - 100 Ml',
+        mrp:'120',
+        price:'170', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FZ08747%2Fbold-care-vibe-premium-chocolate-flavour-2-1641795141.jpg&w=256&q=75',
+        title:'Bold Care Vibe- Premium Chocolate Flavour',
+        mrp:'190',
+        price:'178', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FZ08747%2Fbold-care-vibe-premium-chocolate-flavour-2-1641795141.jpg&w=256&q=75',
+        title:'Bold Care Vibe- Premium Chocolate Flavour',
+        mrp:'190',
+        price:'178', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FA55698%2Fvolini-all-round-360-action-spray-100gm-1-1641788348.jpg&w=256&q=75',
+        title:'Volini All Round 360 Action Spray 100gm',
+        mrp:'290',
+        price:'178', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FC10975%2Fplum-bodylovin-orchid-you-not-shower-gel-240-ml-2-1641795237.jpg&w=256&q=75',
+        title:'Plum Bodylovin Orchid You Not Shower Gel- 240 Ml',
+        mrp:'399',
+        price:'299', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FA88004%2Ftedibar-baby-bodywash-250ml-2-1641791095.jpg&w=256&q=75',
+        title:'Tedibar Baby Bodywash - 250ml',
+        mrp:'287',
+        price:'165', 
+      },
+
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FI05472%2Fdabur-swarna-guggulu-10s-2-1641398935.jpg&w=256&q=75',
+        title:'Dabur Swarna Guggulu 10s',
+        mrp:'298',
+        price:'120', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FI41108%2Fhorlicks-protein-plus-chocolate-container-400-g-2-1643880294.jpg&w=256&q=75',
+        title:'Horlicks Protein Plus Chocolate Container, 400 G',
+        mrp:'489',
+        price:'356', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FV60715%2Fpharmeasy-diabetic-orthopedic-women-slippers-fahion-range-1-cherry-color-size-5-2-1646303031.jpg&w=256&q=75',
+        title:'Pharmeasy Diabetic & Orthopedic Women Slippers (fahion Range-1) Cherry Color, Size 5',
+        mrp:'200',
+        price:'178', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FZ28450%2Fbaidyanath-garbh-chintamani-ras-10-tablets-2-1641789428.jpg&w=256&q=75',
+        title:'Baidyanath Garbh Chintamani Ras - 10 Tablets',
+        mrp:'789',
+        price:'256', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FZ28450%2Fbaidyanath-garbh-chintamani-ras-10-tablets-2-1641789428.jpg&w=256&q=75',
+        title:'Pharmeasy Orthopaedic Electric Heat Belt, Regular',
+        mrp:'192',
+        price:'164', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FR03472%2Fpharmeasy-diabetic-orthopedic-men-slippers-fahion-range-4-brown-color-size-11-1-1641552703.jpg&w=256&q=75',
+        title:'Sandpuppy Zest - New 5 In 1 Heating Pad For Pain Relief Best For Hands And Legs Knee Elbow And Ankle',
+        mrp:'290',
+        price:'167', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FZ74358%2Fsandpuppy-zest-new-5-in-1-heating-pad-for-pain-relief-best-for-hands-and-legs-knee-elbow-and-ankle-1-1641789744.jpg&w=256&q=75',
+        title:'Sandpuppy Zest - New 5 In 1 Heating Pad For Pain Relief Best For Hands And Legs Knee Elbow And Ankle',
+        mrp:'344',
+        price:'289', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2F131679%2Fone-touch-select-glucometer-test-strips-bottle-of-50-1-1643884303.jpg&w=256&q=75',
+        title:'Onetouch Select Glucometer Test Strips 50s Pack',
+        mrp:'298',
+        price:'178', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FX08178%2Fbournvita-biscuits-cookies-with-pro-health-vitamins-465-g-pouch-2-1641970544.jpg&w=256&q=75',
+        title:'Bournvita Biscuits - Cookies With Pro Health Vitamins, 46.5 G Pouch',
+        mrp:'15',
+        price:'9', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FB25490%2Fbrufen-power-pain-relief-spray-20g-400-sprays-2-1646924391.jpg&w=256&q=75',
+        title:'Parodontax Daily Fluoride Toothpaste For Daily Protection Against Gum Problems - 75 Gm',
+        mrp:'123',
+        price:'80', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FA55698%2Fvolini-all-round-360-action-spray-100gm-1-1641788348.jpg&w=256&q=75',
+        title:'Volini All Round 360 Action Spray 100gm',
+        mrp:'290',
+        price:'178', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FK36134%2Fotrivin-breathe-clean-daily-nasal-wash-100-ml-2-1641790753.jpg&w=256&q=75',
+        title:'Otrivin Breathe Clean Daily Nasal Wash - 100 Ml',
+        mrp:'120',
+        price:'170', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FZ08747%2Fbold-care-vibe-premium-chocolate-flavour-2-1641795141.jpg&w=256&q=75',
+        title:'Bold Care Vibe- Premium Chocolate Flavour',
+        mrp:'190',
+        price:'178', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FZ08747%2Fbold-care-vibe-premium-chocolate-flavour-2-1641795141.jpg&w=256&q=75',
+        title:'Bold Care Vibe- Premium Chocolate Flavour',
+        mrp:'190',
+        price:'178', 
+      },
+      {
+        image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FA55698%2Fvolini-all-round-360-action-spray-100gm-1-1641788348.jpg&w=256&q=75',
+        title:'Volini All Round 360 Action Spray 100gm',
+        mrp:'290',
+        price:'178', 
+      },
+]
+
+
+localStorage.setItem("medData",JSON.stringify(medData))

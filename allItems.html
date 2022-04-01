@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all items</title>
+    <link rel="stylesheet" href="./styles/allItems.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="items_div">
+<div class="filters_items-div">
+    <h1>Filter</h1>
+    <div class="category">
+        <h2>category</h2>
+            <p>DOTD</p>
+    </div>
+    <div class="sub_category">
+        <h2>Sub Category</h2>
+    </div>
+    <div>
+        <h3>Brands</h3>
+        <input type="text" placeholder="Search Brand Here">
+        <p>Abzorb</p>
+        <p>Bidiyamnath</p>
+        <p>Bold Care</p>
+        <p>Brufen Power</p>
+        <p>cadbury Bournvita</p>
+        <a href="">View More</a>
+
+    </div>
+</div>
+<div class="showData_div">
+    <div class="sortByPrice_div">
+        <h1>DOTD</h1>
+        <div class="sortItems">
+            <button onclick="sorting()">High to Low</button>
+            <button onclick="sorting1()">Low to High</button>
+        </div>
+    </div>
+    <div id="appendData_div">
+
+    </div>
+</div>
+    </div>
+</body>
+</html>
+<script type="module">
+    import navbar from './components/navbar.js'
+//console.log('navbar',navbar())
+
+let navbar_div=document.getElementById('navbar')
+navbar_div.innerHTML=navbar()
+
+// import appendData from './scripts/allItems.js'
+// // console.log('items',appendData)
+
+let data=JSON.parse(localStorage.getItem('medData'))
+console.log('data',data)
+
+let parend=document.getElementById('appendData_div')
+
+//appendData(data,parent)
+
+const appendData=(data)=>{
+    // console.log(data)
+    data.map(function(el){
+       // console.log('el',el)
+        let div=document.createElement('div')
+        div.id='items-div'
+
+        let image=document.createElement('img')
+        image.src=el.image
+        image.id='item_image'
+
+        let title=document.createElement('p')
+        title.innerHTML=el.title
+
+        let mrp=document.createElement('p')
+        mrp.innerText=`MRP ${el.mrp}`
+        mrp.style.textDecoration='line-through'
+
+        let price=document.createElement('p')
+        price.innerHTML=`price ${el.price}`
+
+        div.append(image,title,mrp,price)
+
+        document.getElementById('appendData_div').append(div)
+    })
+}
+
+appendData(data)
+
+// const appendSortData1=(data)=>{
+//     document.getElementById('appendData_div').innerHTML=''
+//     data.map(function(el){
+//        // console.log('el',el)
+//         let div=document.createElement('div')
+//         div.id='items-div'
+
+//         let image=document.createElement('img')
+//         image.src=el.image
+//         image.id='item_image'
+
+//         let title=document.createElement('p')
+//         title.innerHTML=el.title
+
+//         let mrp=document.createElement('p')
+//         mrp.innerText=`MRP ${el.mrp}`
+//         mrp.style.textDecoration='line-through'
+
+//         let price=document.createElement('p')
+//         price.innerHTML=`price ${el.price}`
+
+//         div.append(image,title,mrp,price)
+
+//         document.getElementById('appendData_div').append(div)
+//     })
+// }
+// function sorting1(){
+//     let res=data.price.sort(function(a,b){
+//         return Number(b.vote_average) - Number(a.vote_average)
+//     })
+
+//    console.log("sortedData",res)
+//    //appendSortedData1(data)
+
+//     }
+
+</script>
