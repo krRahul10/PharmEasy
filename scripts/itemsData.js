@@ -1,4 +1,4 @@
-let medData=[
+let fullData=[
     {
       image:'https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FC34354%2Fciphands-hand-sanitizer-bottle-of-100-ml-2-1641789437.jpg&w=256&q=75',
       title:'Ciphands Hand Sanitizer Bottle Of 100 Ml',
@@ -177,4 +177,4 @@ let medData=[
 ]
 
 
-localStorage.setItem("medData",JSON.stringify(medData))
+localStorage.setItem("fullData",JSON.stringify(fullData))
